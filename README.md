@@ -33,7 +33,7 @@ In the front_app directory, create your HTML files (index.html, about.html, etc.
 <title>My Blog</title>
 </head>
 <body>
-<h1>Welcome to My Blog!</h1>
+<h1>Welcome to My Docker-Compose Blog!</h1>
 <! — Your content goes here →
 </body>
 </html>
