@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db_app:
+    build:
+      context: ./db_app
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  back:
+    build:
+      context: ./back_app
+    depends_on:
+      - db_app
+    ports:
+      - "3000:3000"
+
+  front_app:
+    build:
+      context: ./front_app
+    ports:
+      - "80:80"
+
+
